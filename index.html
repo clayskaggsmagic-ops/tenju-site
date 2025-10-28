@@ -72,7 +72,9 @@
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#essay" class="nav-link">Essay</a>
+      <a href="#charter" class="nav-link">Charter</a>
+      <span class="nav-separator">·</span>
+      <a href="#team" class="nav-link">Team</a>
       <span class="nav-separator">·</span>
       <a href="#contact" class="nav-link">Contact</a>
     </div>
@@ -81,15 +83,17 @@
   <!-- Hero Section -->
   <header class="hero section" role="banner">
     <div class="container">
+      <div class="hero-logo">
+        <img src="/assets/tenju-logo.svg" alt="Tenju Solutions" class="logo-image">
+      </div>
       <h1 class="hero-title">Tenju Solutions</h1>
-      <p class="hero-subtitle">The Nature of War: The Age of Assessment</p>
       <p class="hero-tagline">Between invention and transformation.</p>
     </div>
   </header>
 
-  <!-- Essay Section -->
+  <!-- Charter Section -->
   <main id="main-content">
-    <article id="essay" class="essay section">
+    <article id="charter" class="essay section">
       <div class="container essay-container">
         <h2 class="essay-title">The Nature of War: The Age of Assessment</h2>
 
@@ -123,11 +127,55 @@
       </div>
     </section>
 
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <div class="container">
+        <h2 class="section-title">Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="team-member-portrait">
+              <span class="portrait-initial">H</span>
+            </div>
+            <h3 class="team-member-name">Haroon</h3>
+            <p class="team-member-bio">AI engineer, senior at Yale, and incoming Air Force officer.</p>
+          </div>
+          <div class="team-member">
+            <div class="team-member-portrait">
+              <span class="portrait-initial">C</span>
+            </div>
+            <h3 class="team-member-name">Clay</h3>
+            <p class="team-member-bio">Wargamer, Air Force officer, and Yale graduate summa cum laude.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <p class="contact-text">For inquiries: <a href="mailto:hello@tenju.ai" class="contact-link">hello@tenju.ai</a></p>
+        <p class="contact-intro">We'd love to hear from you.</p>
+
+        <form action="https://formspree.io/f/mnnopnwy" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+
+        <p class="contact-fallback">Or email directly: <a href="mailto:hello@tenju.ai" class="contact-link">hello@tenju.ai</a></p>
       </div>
     </section>
   </main>
