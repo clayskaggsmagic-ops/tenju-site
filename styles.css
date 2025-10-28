@@ -142,26 +142,6 @@ a:focus {
 }
 
 /* ============================================
-   SKIP LINK (Accessibility)
-   ============================================ */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--accent);
-  color: var(--bg);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  text-decoration: none;
-  font-weight: 600;
-  z-index: 100;
-}
-
-.skip-link:focus {
-  top: 0;
-  outline: none;
-}
-
-/* ============================================
    NAVIGATION
    ============================================ */
 .nav {
@@ -458,14 +438,15 @@ a:focus {
   height: auto;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 4px 20px rgba(59, 111, 143, 0.3));
+  /* Invert black logo to white for contrast on dark background */
+  filter: invert(1) brightness(1.05) drop-shadow(0 4px 20px rgba(59, 111, 143, 0.4));
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
               filter 0.4s ease;
 }
 
 .hero-logo:hover .logo-image {
   transform: scale(1.02);
-  filter: drop-shadow(0 8px 30px rgba(59, 111, 143, 0.5));
+  filter: invert(1) brightness(1.05) drop-shadow(0 8px 30px rgba(59, 111, 143, 0.6));
 }
 
 /* Dramatic entrance animation */
