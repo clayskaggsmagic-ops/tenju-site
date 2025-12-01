@@ -74,7 +74,7 @@ git commit -m "Initial commit: Tenju Solutions website"
 
 # Create repository on GitHub (e.g., tenju-site)
 # Then push to GitHub
-git remote add origin https://github.com/<your-username>/tenju-site.git
+git remote add origin https://github.com/<clayskaggsmagic-ops>/tenju-site.git
 git branch -M main
 git push -u origin main
 ```
